@@ -6,9 +6,10 @@
 <title>Dilsher Jan Seva Kendra</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#f5f7fa;color:#333;}
+body{background:#f4f8fc;color:#333;line-height:1.6;}
 
 header{
 background:#0b3d91;
@@ -19,9 +20,10 @@ justify-content:space-between;
 align-items:center;
 position:sticky;
 top:0;
+z-index:1000;
 }
 
-header h1{font-size:22px;}
+header h1{font-size:22px;font-weight:600;}
 
 nav a{
 color:white;
@@ -31,22 +33,14 @@ font-size:15px;
 }
 
 .hero{
-background:linear-gradient(135deg,#0b3d91,#1e88e5);
+background:linear-gradient(135deg,#0b3d91,#1976d2);
 color:white;
 text-align:center;
 padding:120px 20px;
 }
 
-.hero h2{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:30px;
-opacity:0.9;
-}
+.hero h2{font-size:44px;margin-bottom:15px;}
+.hero p{font-size:18px;margin-bottom:30px;}
 
 .btn{
 background:white;
@@ -58,48 +52,45 @@ font-weight:600;
 transition:0.3s;
 }
 
-.btn:hover{
-background:#e3f2fd;
-}
-
 .section{
 padding:80px 20px;
 text-align:center;
 }
 
 .section h3{
-font-size:32px;
+font-size:34px;
 margin-bottom:50px;
+color:#0b3d91;
 }
 
 .cards{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:30px;
+gap:25px;
 }
 
 .card{
 background:white;
-width:280px;
+width:300px;
 padding:30px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
 transition:0.3s;
+text-align:left;
 }
 
-.card:hover{
-transform:translateY(-10px);
-}
+.card:hover{transform:translateY(-8px);}
 
 .card i{
-font-size:40px;
-color:#1e88e5;
+font-size:35px;
+color:#1976d2;
 margin-bottom:15px;
 }
 
 .card h4{
 margin-bottom:10px;
+color:#0b3d91;
 }
 
 .about{
@@ -112,7 +103,8 @@ footer{
 background:#0b3d91;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
+margin-top:40px;
 }
 
 .whatsapp{
@@ -145,37 +137,62 @@ box-shadow:0 5px 20px rgba(0,0,0,0.3);
 </header>
 
 <section class="hero">
-<h2>All Banking & Digital Services</h2>
-<p>Fast • Secure • Reliable Services Near You</p>
+<h2>All Banking & Government Services</h2>
+<p>Fast • Secure • Reliable Digital Service Center</p>
 <a href="tel:YOURNUMBER" class="btn">Contact Now</a>
 </section>
 
 <section class="section" id="services">
 <h3>Our Services</h3>
+
 <div class="cards">
 
 <div class="card">
-<i class="fas fa-money-bill-wave"></i>
-<h4>AEPS Service</h4>
-<p>Cash Withdrawal & Balance Check</p>
+<i class="fas fa-university"></i>
+<h4>Bank Account Opening</h4>
+<p>New Saving & Current Account Opening Service</p>
 </div>
 
 <div class="card">
-<i class="fas fa-university"></i>
-<h4>Money Transfer</h4>
-<p>Instant IMPS / NEFT Transfer</p>
+<i class="fas fa-credit-card"></i>
+<h4>ATM / Debit Card Apply</h4>
+<p>New ATM Card & Replacement Service</p>
+</div>
+
+<div class="card">
+<i class="fas fa-money-bill-wave"></i>
+<h4>AEPS & Money Transfer</h4>
+<p>Cash Withdrawal, Balance Check & IMPS/NEFT</p>
 </div>
 
 <div class="card">
 <i class="fas fa-id-card"></i>
-<h4>PAN Card</h4>
-<p>New PAN & Correction</p>
+<h4>PAN Card Service</h4>
+<p>New PAN & Correction Apply</p>
 </div>
 
 <div class="card">
 <i class="fas fa-file-alt"></i>
-<h4>Online Services</h4>
-<p>Form Fillup, Bill Payment, Recharge</p>
+<h4>Income Certificate Apply</h4>
+<p>Online Income Certificate Application</p>
+</div>
+
+<div class="card">
+<i class="fas fa-home"></i>
+<h4>Resident Certificate Apply</h4>
+<p>Domicile / Residential Certificate Service</p>
+</div>
+
+<div class="card">
+<i class="fas fa-baby"></i>
+<h4>Birth Certificate Apply</h4>
+<p>New Birth Certificate Online Apply</p>
+</div>
+
+<div class="card">
+<i class="fas fa-copy"></i>
+<h4>Photocopy & Lamination</h4>
+<p>Color & Black Copy, Lamination Available</p>
 </div>
 
 </div>
@@ -183,13 +200,14 @@ box-shadow:0 5px 20px rgba(0,0,0,0.3);
 
 <section class="about">
 <h3>Why Choose Us?</h3>
-<p>We provide trusted, fast and secure banking & digital services with complete customer satisfaction.</p>
+<p>We provide trusted, fast and secure banking & government services with complete transparency and customer satisfaction.</p>
 </section>
 
 <footer id="contact">
-<p>📍 Bariaul, Chowk. Kamtol road, Darbhanga, Bihar</p>
-<p>📞 7320868301</p>
-<p>© 2026 Dilsher Jan Seva Kendra</p>
+<p>📍 Bariaul, Chow,Kamtol road, Darbhang, Bihar</p>
+<p>📞 7320868301,6207928352</p>
+<p>⏰ Working Hours: 9:00 AM – 8:00 PM</p>
+<p>© 2026 Dilsher Jan Seva Kendra | All Rights Reserved</p>
 </footer>
 
 <a href="https://wa.me/91YOURNUMBER" class="whatsapp">
@@ -198,3 +216,4 @@ box-shadow:0 5px 20px rgba(0,0,0,0.3);
 
 </body>
 </html>
+
